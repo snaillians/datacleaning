@@ -1,9 +1,12 @@
 rm(list=ls())
-if(!file.exists("./R/getCleaningData")) dir.create("./R/getCleaningData")
-setwd("./R/getCleaningData")
+#if(!file.exists("./R/getCleaningData")) dir.create("./R/getCleaningData")
+#setwd("./R/getCleaningData")
 
+#download the data files, please unzip the files manually
 fileURL<-"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 download.file(fileURL,destfile="dataset.zip",mode="wb")
+#-------------------------------------------------------------------
+
 #load data in to memeory
 xTrain=read.table("./UCI HAR dataset/train/X_train.txt")
 yTrain=read.table("./UCI HAR dataset/train/y_train.txt")
@@ -13,6 +16,8 @@ yTest=read.table("./UCI HAR dataset/test/y_test.txt")
 sTest=read.table("./UCI HAR dataset/test/subject_test.txt")
 xname=read.table("./UCI HAR dataset/features.txt",colClasses=rep("character",2))
 activity=read.table("./UCI HAR dataset/activity_labels.txt")
+
+
 #1 merge training data and test data, x and y into one dataset
 data=cbind(rbind(xTrain,xTest),rbind(yTrain,yTest),rbind(sTrain,sTest))
 #4 give data columns with descriptive name
