@@ -3,7 +3,7 @@ datacleaning
 This is the readme document for project of data cleaning.
 There is a .R file called run_analysis.R to implement all the commands according to instructions.
 
-To run this R file, you need to download the file into a folder, say "/root"
+To run this R file, you need to download the file into a folder.
 then you will download a data package from the web automatically while running some codes in the file.
 unzip the data file into the same folder without changing the folder name of data files.
 
