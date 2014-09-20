@@ -14,7 +14,7 @@ Now, you can run the remaining codes to obtain the ultimate result, which can be
 
 The details can be found also in the .R file. 
 
-There is 81 variables in the last file, including 79 variables in x data (mean and std realted variable),
+There is 81 variables in the last file, including 79 variables in x data (mean and std related variables),
 and 1 variable called "activity_label"  as y data, and also 1 variable called "subject_label" as subject data.
 
 Enjoy it and thanks for reading this file!
